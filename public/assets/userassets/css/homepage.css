@@ -1,0 +1,531 @@
+body {
+    margin: 40px 80px 0px 80px;
+}
+
+header {
+    width: 100%;
+
+}
+
+#company-logo img {
+    height: 50px;
+    width: 50px;
+}
+
+header #company-logo img {
+    float: left;
+    width: 5%;
+}
+
+header #company-logo p {
+    float: left;
+    width: 60%;
+    font: Regular 45px/57px Doris;
+    font-size: 36px;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+    color: #E45255;
+    opacity: 1;
+    margin: 3px;
+}
+
+
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav #active {
+    font: Regular 24px/28px Ubuntu;
+    letter-spacing: 0px;
+    color: #E45255;
+    opacity: 1;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a:hover {
+    background: #E45255 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    opacity: 1;
+    color: white;
+    height: 20px;
+}
+
+nav #active:hover {
+    color: white;
+}
+
+/* Clear floats */
+#header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.drop-down-menu {
+    float: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.drop-down-menu img {
+    float: left;
+}
+
+.drop-down-menu .content-text {
+    float: left;
+}
+
+.drop-down-menu .content-text h3, p {
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+.drop-down-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#drop-down-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#drop-down-content img {
+    height: 50px;
+    width: 50px;
+}
+
+#drop-down {
+    position: relative;
+    display: inline-block;
+}
+
+#drop-down-content {
+    visibility: hidden;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 673px;
+    top: 40px;
+    left: -605px;
+    padding: 10px;
+}
+
+#drop-down-content a {
+    text-decoration: none;
+}
+
+#drop-down-content a:hover {
+    height: auto;
+}
+
+
+#drop-down-content .drop-down-menu:hover {
+    background: #E45255 0% 0% no-repeat padding-box;
+}
+
+#drop-down:hover #drop-down-content {
+    visibility: visible;
+}
+
+/*
+    main view
+*/
+
+#main-view #text {
+    float: left;
+    width: 50%;
+}
+
+#main-view #image {
+    float: left;
+    width: 50%;
+}
+
+#main-view #text {
+    margin-top: 30vh;
+}
+
+h1 {
+    text-align: center;
+    font: Bold 45px/50px Ubuntu;
+    letter-spacing: 0px;
+    color: #5777BA;
+    opacity: 1;
+}
+
+#main-view #text h1 {
+    text-align: left;
+    font: Bold 35px/40px Ubuntu;
+    letter-spacing: 0px;
+    color: #5777BA;
+    opacity: 1;
+}
+
+#main-view img {
+    height: 60vh;
+}
+
+#scroll-guide img {
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+#main-view:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#main-view {
+    height: 85vh;
+}
+
+#main-view #scroll-guide p {
+    text-align: left;
+    font: Regular 24px/28px Ubuntu;
+    letter-spacing: 0px;
+    color: #E45255;
+    opacity: 1;
+    margin-left: 24px;
+}
+
+/*
+    specialization
+*/
+#specialization {
+    background: #E6EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 50px;
+}
+
+#specialization h1 {
+    text-align: center;
+}
+
+#specialization .content {
+    float: left;
+    width: 35%;
+    background-color: white;
+    padding: 50px;
+    margin: 30px;
+}
+
+#specialization .content h3 {
+    margin-top: 0;
+}
+
+#specialization:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button {
+    width: 88px;
+    height: 36px;
+    background: #E45255 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    font: Light 18px/21px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    width: 140px;
+    transition: width 1.5s;
+}
+
+/*
+    services
+*/
+
+#services .content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#services .content .content-text {
+    float: left;
+    width: 50%;
+}
+
+#services .content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#services .content .content-image img {
+    width: 500px;
+    height: 450px;
+}
+
+#services .content ul {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#services .content ul li {
+    border: 0.5px solid #47526E;
+    border-bottom: 0;
+    border-radius: 2px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 10px;
+    padding-left: 30px;
+    height: 36px;
+    line-height: 2;
+}
+
+#services .content ul li:last-child {
+    border-bottom: 0.5px solid #47526E;
+}
+
+#services .content ul li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.5em;
+    color: #E45255;
+ }
+
+ /*
+    client-feedback
+ */
+
+#client-feedback {
+    background: #E6EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 50px;
+}
+
+#client-feedback h1 {
+    margin-top: 0;
+}
+
+#client-feedback h1, #client-feedback > p {
+     text-align: center;
+ }
+
+ #client-feedback .quote {
+     font-style: italic;
+ }
+
+#client-feedback .content {
+     width: 28%;
+     float: left;
+ }
+
+#client-feedback:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#client-feedback .content{
+    position: relative;
+    padding: 30px;
+}
+
+#client-feedback .content .content-image {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+
+#client-feedback .content img {
+    width: 60px;
+    height: 60px;
+    border: 5px solid white;
+}
+
+#client-feedback .content .content-text {
+    background-color: white;
+    margin: 15px;
+    padding: 15px 35px;
+}
+
+
+/*
+    promotion
+*/
+
+#promotion {
+    background: #0B1B3C 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#promotion h2 {
+    margin-top: 0;
+}
+
+#promotion h3 {
+    font-weight: 500;
+}
+
+#promotion input[type=submit] {
+    margin-left: -5%;
+    color: white;
+    background-color: red;
+    padding: 6px 20px;
+    width: 150px;
+}
+
+#promotion input[type=submit]:hover {
+    width: 200px;
+    transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out; /* Firefox 4 */
+    -webkit-transition: width 1s ease-in-out; /* Safari and Chrome */
+    -o-transition: width 1s ease-in-out; /* Opera */
+    -ms-transition: width 1s ease-in-out; /* Explorer 10 */
+}
+
+#promotion input {
+    height: 40px;
+    border: none;
+    padding: 0;
+    border-radius: 25px;
+}
+
+#promotion input[type=text] {
+    width: 600px;
+    outline: none;
+    padding-left: 10px;
+    /*background-color: transparent; */
+
+}
+
+#promotion input[type=text]::-webkit-input-placeholder {
+    /* WebKit browsers */
+     color: transparent;
+}
+#promotion input[type=text]:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+     color: transparent;
+}
+#promotion input[type=text]::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+     color: transparent;
+}
+#promotion input[type=text]:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+     color: transparent;
+}
+#promotion input[type=text]::placeholder {
+     color: transparent;
+}
+
+/*
+    footer
+*/
+
+footer, a {
+    margin-bottom: 0;
+    text-align: left;
+    font: Regular 24px/28px Ubuntu;
+    letter-spacing: 0px;
+    color: #47526E;
+    opacity: 0.9;
+}
+
+footer #footer-links a {
+    display: block;
+    padding: 0px 20px 6px;
+    text-decoration: none;
+}
+
+footer #footer-links a:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.5em;
+ }
+
+footer #footer-links a:hover {
+    text-decoration: underline;
+}
+/*
+footer .content {
+    float: left;
+}
+*/
+
+footer #address {
+    width: 30%;
+    float: left;
+}
+
+footer #userful-links {
+    width: 25%;
+    float: left;
+}
+
+footer #our-services {
+    width: 25%;
+    float: left;
+}
+
+footer #social-icons {
+    width: 20%;
+    float: left;
+}
+
+footer #footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer #social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+footer #footer {
+    padding: 30px 60px;
+}
+
+footer copyright {
+    background: #0B1B3C 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    display: block;
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
