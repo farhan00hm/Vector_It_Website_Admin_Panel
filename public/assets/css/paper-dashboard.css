@@ -906,13 +906,13 @@ License - nucleoapp.com/license/
 
 /*clientsfeedback modal form start*/
 
-#feedbackModalName,#feedbackModalProfession{
+#feedbackModalName, #feedbackModalProfession {
     width: 100%;
     height: 50px;
     margin-bottom: 10px;
 }
 
-#feedbackModalFeedback{
+#feedbackModalFeedback {
     width: 100%;
     height: 200px;
 }
@@ -923,29 +923,33 @@ License - nucleoapp.com/license/
 /*career.blade.php*/
 
 /*top div start*/
-#top-div{
+#top-div {
     width: 100%;
     height: 105px;
     border: 1px solid #b2beb5;
     padding: 10px;
     margin-bottom: 10px;
 }
-.top-div-row{
+
+.top-div-row {
     padding: 5px;
-    font:  15px/30px ubuntu, serif;
+    font: 15px/30px ubuntu, serif;
 }
-#sorted-option{
+
+#sorted-option {
     width: 100%;
     padding: 2px;
 }
-#search-field{
+
+#search-field {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
     width: 80%;
     background: #f1f1f1;
 }
-#search-button{
+
+#search-button {
     float: left;
     width: 20%;
     /*padding: 10px;*/
@@ -958,12 +962,13 @@ License - nucleoapp.com/license/
     /*height: 90%;*/
 }
 
-#application-lists{
+#application-lists {
     width: 100%;
     height: auto;
     border: 1px solid #b2beb5;
 }
-.application{
+
+.application {
     margin: 10px;
     padding: 10px;
     background-color: powderblue;
@@ -1019,12 +1024,25 @@ License - nucleoapp.com/license/
     cursor: pointer;
 }
 
-.download-button{
+.download-button {
     color: white;
     border: 1px solid white;
 }
 
-/*test pop up css end*/
 
 /*Portfolio*/
 
+#portfolios-div{
+    padding: 10px;
+    border: 3px solid green;
+    margin-bottom: 10px;
+}
+/*portfolio create*/
+#portfolio-create-form {
+    margin: auto;
+    width: 700px;
+}
+#portfolio-delete{
+    /*margin-top: 20px;*/
+    /*margin-right: auto;*/
+}

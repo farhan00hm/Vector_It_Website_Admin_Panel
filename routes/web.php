@@ -46,9 +46,12 @@ Route::get("/sortdata",'AdminDashBoardController@sortApplications');
 Route::get("/livesearch",'AdminDashBoardController@liveSearch');
 
 //Portfolio Route
-Route::get('/portfolio',function (){
-    return view ('admin.portfolio');
-});
+//Route::get('/portfolio',function (){
+//    return view ('portfolio.create');
+//});
+
+//Route::resource('portfolio','PortfolioController');
+Route::resource('portfolio','PortfolioController');
 
 
 //user Dashboard Route start
@@ -59,3 +62,5 @@ Route::post('/store-promotations-contact', 'UserDashBoardController@promotionCon
 //Route::get('/homepage',function (){
 //    return view ('user.homepage');
 //});
+
+

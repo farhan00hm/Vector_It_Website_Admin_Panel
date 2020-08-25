@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('../assets/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('../assets/img/favicon.png') }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>
         Dashboard
@@ -15,7 +15,7 @@
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+{{--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">--}}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -24,8 +24,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet"/>
+    <link href="{{ asset('../assets/css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('../assets/css/paper-dashboard.css?v=2.0.1') }}" rel="stylesheet"/>
 
 
 </head>
@@ -36,7 +36,7 @@
         <div class="logo">
             <a href="https://www.creative-tim.com" class="simple-text logo-mini">
                 <div class="logo-image-small">
-                    <img src="../assets/img/logo-small.png">
+                    <img src="{{ asset('../assets/img/logo-small.png') }}">
                 </div>
                 <!-- <p>CT</p> -->
             </a>
@@ -80,9 +80,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./portfolio">
+                    <a href="/portfolio">
                         <i class="nc-icon nc-tile-56"></i>
-                        <p>Table List</p>
+                        <p>Portfolio</p>
                     </a>
                 </li>
                 <li>
@@ -135,6 +135,8 @@
             @yield('clients-feedback')
             @yield('employeesapplication')
             @yield('portfolio')
+            @yield('edit-portfolio')
+            @yield('portfolio-index')
         </div>
 
     </div>
@@ -143,20 +145,20 @@
 
 
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.min.js"></script>
-<script src="../assets/js/core/popper.min.js"></script>
-<script src="../assets/js/core/bootstrap.min.js"></script>
-<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<script src="{{ asset('../assets/js/core/jquery.min.js') }}"></script>
+<script src="{{ asset('../assets/js/core/popper.min.js') }}"></script>
+<script src="{{ asset('../assets/js/core/bootstrap.min.js') }}"></script>
+<script src="{{ asset('../assets/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
 <!--  Google Maps Plugin    -->
 {{--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>--}}
 <!-- Chart JS -->
-<script src="../assets/js/plugins/chartjs.min.js"></script>
+<script src="{{ asset('../assets/js/plugins/chartjs.min.js') }}"></script>
 <!--  Notifications Plugin    -->
-<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<script src="{{ asset('../assets/js/plugins/bootstrap-notify.js') }}"></script>
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="../assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script>
+<script src="{{ asset('../assets/js/paper-dashboard.min.js?v=2.0.1') }}" type="text/javascript"></script>
 <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-<script src="../assets/demo/demo.js"></script>
+<script src="{{ asset('../assets/demo/demo.js') }}"></script>
 {{--<script>--}}
 {{--    $(document).ready(function () {--}}
 {{--        // Javascript method's body can be found in assets/assets-for-demo/js/demo.js--}}
